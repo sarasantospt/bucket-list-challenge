@@ -5,20 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bucket List Travel Challenge</title>
     <style>
+      :root {
+        --branding-color: #d4af37;
+        --box-shadow: 0 6px 16px rgb(0, 109, 119, 0.65);
+      }
+      h1 {
+        font-size: 120px;
+      }
+
+      h2 {
+        font-size: 55px;
+      }
+
+      h4 {
+        text-align: center;
+      }
+
       h1,
       h2 {
         text-align: center;
+        color: #ffffff;
+        text-shadow: 0 2px 6px rgba(0,0,0,0.4)
+      }
+
+      .hero {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/160/original/pexels-asadphoto-9482126.jpg?1756921240");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        padding: 110px 20px;
+      }
+
+      .btn-branding {
+        background: var(--branding-color);
+        box-shadow: var(--box-shadow);
+        border-radius: 30px;
+        border: 2px solid rgb(241, 243, 240);
+        color: whitesmoke;
+        font-size: 18px;
+        line-height: 27px;
+        padding: 15px 30px;
+        transition: transform 0.9s ease-in-out;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-branding:hover {
+        background: #b8860b;
+        color: white;
+        border: 2px solid rgb(247, 247, 247);
+        box-shadow: 0 8px 20px rgba(0, 109, 119, 0.75);
+        transform: translateY(-3px);
+      }
+
+      .btn-branding-outline {
+        color: var(--branding-color);
+        box-shadow: var(--box-shadow);
+        border: 2px solid var(--branding-color);
+        border-radius: 30px;
+        font-size: 18px;
+        line-height: 27px;
+        padding: 15px 30px;
+        transition: transform 0.7s ease;
+      }
+
+      .btn-branding-outline:hover {
+        background: var(--branding-color);
+        color: white;
+        transform: translateY(-5px);
       }
     </style>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <div class="hero">
-      <h1 class="my-name">Bora Bora🌴</h1>
-      <h2 class="mb-5 mt-1">Pearl of the Pacific🐟</h2>
+      <h1 class="country-name">Bora Bora</h1>
+      <h2 class="mb-5 mt-1"><i>Pearl of the Pacific</i></h2>
       <div>
         <a
           href="https://www.audleytravel.com/french-polynesia/places-to-go/bora-bora?infinity=ict2~net~gaw~cmp~19908545276~ag~169949490191~ar~712499300065~kw~visit%20bora%20bora~mt~e~acr~2868936838&audcmp=19908545276&audadg=169949490191&audkey=visit%20bora%20bora&auddev=c&audadid=712499300065&audpos=&audtrgt=kwd-3402142863&audtel=ppcnb&audnet=g&gad_source=1&gad_campaignid=19908545276&gbraid=0AAAAAD_LTQtLEAGYq4BctwnGm4fYOonxy&gclid=Cj0KCQjwzt_FBhCEARIsAJGFWVl06Ge20JKac_M1ArFReD9Ub-SbI0ZT7mtdhBRU_pCraNwpq40EV4QaAnk1EALw_wcB"
+          target="_blank"
           class="btn btn-branding"
           id="visit-borabora"
           title="Visit Bora Bora"
@@ -27,6 +94,19 @@
       </div>
     </div>
     <div class="container">
+      <h4>Why is Bora Bora on my bucket list?</h4>
+      <p>
+        Bora Bora is on my bucket list because it feels like the definition of
+        paradise - a place where time slows down and beauty is everywhere you
+        look. The crystal-clear turquoise lagoon, soft white sand and iconic
+        overwater bungalows make it one of the most breathtaking destinations in
+        the world. This beautiful paradise has a calm, romantic energy that
+        feels healing and luxurious all at once. Swimming with colourful fish,
+        watching sunsets and waking up to the gentle sounds of the waves feels
+        like a once in a lifetime experience. Finally, for me it's the perfect
+        blend of natural wonder and peaceful escape, which is why it holds such
+        a special place in my travel dreams list.
+      </p>
       <h4>History about this beautiful island</h4>
       <p>
         The history of Bora Bora dates back to the starting point of South East
@@ -37,7 +117,7 @@
         do almost 2,000 years later! Bora Bora Island was first inhabited by
         Polynesians who crossed the Pacific Ocean in vessels from Tonga & Samoa
         around the 3rd century AD. Perhaps the world’s greatest navigators of
-        all time.
+        all time!
       </p>
       <h4>Some fun facts about Bora Bora🔎</h4>
       <ul>
