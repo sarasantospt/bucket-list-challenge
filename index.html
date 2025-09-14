@@ -1,87 +1,178 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Bucket List Travel Challenge</title>
+
     <style>
       :root {
         --branding-color: #d4af37;
+
         --box-shadow: 0 6px 16px rgb(0, 109, 119, 0.65);
       }
+
+      body {
+        background: linear-gradient(to bottom, #ffd7c2, #ffe5d9) !important;
+
+        font-family: sans-serif;
+      }
+
+      .container {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 900px;
+      }
+
+      .container h4 {
+        margin-top: 40px;
+        color: #d7a90e;
+        font-size: 24px;
+      }
+
+      .container p,
+      .container ul {
+        line-height: 1.7;
+        font-size: 18px;
+        color: #333;
+      }
+
+      .container ul {
+        padding-left: 20px;
+      }
+
       h1 {
         font-size: 120px;
+
+        margin-bottom: 5px;
+
+        margin-top: 20px;
       }
 
       h2 {
-        font-size: 55px;
+        font-size: 40px;
+
+        margin-top: 0;
       }
 
       h4 {
         text-align: center;
+        color: #d7a90e;
+        font-size: 20px;
       }
 
       h1,
       h2 {
         text-align: center;
+
         color: #ffffff;
-        text-shadow: 0 2px 6px rgba(0,0,0,0.4)
+
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
       }
 
       .hero {
         background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/160/original/pexels-asadphoto-9482126.jpg?1756921240");
+
         background-position: center center;
+
         background-repeat: no-repeat;
+
         background-size: cover;
+
         text-align: center;
-        padding: 110px 20px;
+
+        padding: 160px 20px;
       }
 
       .btn-branding {
         background: var(--branding-color);
+
         box-shadow: var(--box-shadow);
+
         border-radius: 30px;
+
         border: 2px solid rgb(241, 243, 240);
+
         color: whitesmoke;
+
         font-size: 18px;
+
         line-height: 27px;
+
         padding: 15px 30px;
+
         transition: transform 0.9s ease-in-out;
+
         text-decoration: none;
+
         display: inline-block;
       }
 
       .btn-branding:hover {
         background: #b8860b;
+
         color: white;
+
         border: 2px solid rgb(247, 247, 247);
+
         box-shadow: 0 8px 20px rgba(0, 109, 119, 0.75);
+
         transform: translateY(-3px);
       }
 
       .btn-branding-outline {
         color: var(--branding-color);
+
         box-shadow: var(--box-shadow);
+
         border: 2px solid var(--branding-color);
+
         border-radius: 30px;
+
         font-size: 18px;
+
         line-height: 27px;
+
         padding: 15px 30px;
+
         transition: transform 0.7s ease;
       }
 
       .btn-branding-outline:hover {
         background: var(--branding-color);
+
         color: white;
+
         transform: translateY(-5px);
       }
+
+      .container h4.fun-facts,
+      .container h4.cuisine {
+        text-align: left;
+        color: #b8860b;
+      }
+
+      footer {
+        text-align: center;
+      }
     </style>
+
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
+
   <body>
     <div class="hero">
       <h1 class="country-name">Bora Bora</h1>
+
       <h2 class="mb-5 mt-1"><i>Pearl of the Pacific</i></h2>
+
       <div>
         <a
           href="https://www.audleytravel.com/french-polynesia/places-to-go/bora-bora?infinity=ict2~net~gaw~cmp~19908545276~ag~169949490191~ar~712499300065~kw~visit%20bora%20bora~mt~e~acr~2868936838&audcmp=19908545276&audadg=169949490191&audkey=visit%20bora%20bora&auddev=c&audadid=712499300065&audpos=&audtrgt=kwd-3402142863&audtel=ppcnb&audnet=g&gad_source=1&gad_campaignid=19908545276&gbraid=0AAAAAD_LTQtLEAGYq4BctwnGm4fYOonxy&gclid=Cj0KCQjwzt_FBhCEARIsAJGFWVl06Ge20JKac_M1ArFReD9Ub-SbI0ZT7mtdhBRU_pCraNwpq40EV4QaAnk1EALw_wcB"
@@ -93,8 +184,10 @@
         >
       </div>
     </div>
+
     <div class="container">
       <h4>Why is Bora Bora on my bucket list?</h4>
+
       <p>
         Bora Bora is on my bucket list because it feels like the definition of
         paradise - a place where time slows down and beauty is everywhere you
@@ -107,7 +200,9 @@
         blend of natural wonder and peaceful escape, which is why it holds such
         a special place in my travel dreams list.
       </p>
+
       <h4>History about this beautiful island</h4>
+
       <p>
         The history of Bora Bora dates back to the starting point of South East
         Asia. The ancestors of Polynesians sailed the Pacific Ocean across the
@@ -119,16 +214,25 @@
         around the 3rd century AD. Perhaps the world’s greatest navigators of
         all time!
       </p>
-      <h4>Some fun facts about Bora Bora🔎</h4>
+
+      <h4 class="fun-facts">Some fun facts about Bora Bora🔎</h4>
+
       <ul>
         <li>Bora Bora is part of France</li>
+
         <li>There is no ‘B’ in the entire Tahitian Language</li>
+
         <li>It is a pest-free zone</li>
+
         <li>Flowers can be used to show your relationship status</li>
+
         <li>There is no public transit in Bora Bora</li>
+
         <li>Tattooing is a sacred art in Bora Bora</li>
       </ul>
-      <h4>Bora Bora cuisine🍛</h4>
+
+      <h4 class="cuisine">Bora Bora cuisine🍛</h4>
+
       <ul>
         <li>
           <strong>Poisson Cru</strong> (fresh tuna, lime juice, coconut milk and
@@ -155,6 +259,9 @@
           arrowroot then baked and served with coconut cream)
         </li>
       </ul>
+    </div>
+    <div class="footer">
+      <footer><i>This page was coded with love by Sara🌷</i></footer>
     </div>
   </body>
 </html>
